@@ -13,3 +13,16 @@ else
     echo("variable value is within the legal range");
 }
 ?>
+
+// php validate url
+
+<?php
+&url = "https://www.w3schools.com";
+
+if(filter_var(&url, FILTER_VALIDATE_URL, FILTER_FLAG_QUERY_REQUIRE)===false){
+    echo ("&url is a validate URL with a query string");
+}
+else{
+    echo("&url is a not validate URL with a query string");
+}
+?>
